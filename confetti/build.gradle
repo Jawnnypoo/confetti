@@ -1,18 +1,17 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 29
 
     defaultConfig {
-        minSdkVersion 12
-        targetSdkVersion 28
+        minSdkVersion 15
+        targetSdkVersion 29
     }
 }
 
 
 dependencies {
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
 }
 
 apply from: './gradle-mvn-push.gradle'
