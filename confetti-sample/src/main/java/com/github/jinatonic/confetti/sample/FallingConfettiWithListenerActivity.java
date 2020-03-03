@@ -36,12 +36,7 @@ public class FallingConfettiWithListenerActivity extends AbstractActivity
         velocitySlow = res.getDimensionPixelOffset(R.dimen.default_velocity_slow);
         velocityNormal = res.getDimensionPixelOffset(R.dimen.default_velocity_normal);
 
-        bitmap = Bitmap.createScaledBitmap(
-                BitmapFactory.decodeResource(res, R.drawable.snowflake),
-                size,
-                size,
-                false
-        );
+        bitmap = EmojiBitmapFactory.create(this, "\uD83E\uDD55", size);
     }
 
     @Override
